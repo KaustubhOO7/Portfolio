@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>PortFolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/Resume.css}">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="circle"></div>
+    <a th:href="@{/}"><span id="name">Kaustubh Sharma</span></a>
+    <span id="des">Software Developer</span>
+    <div class="rightNav">
+      <a th:href="@{/res}" id="resume">Resume | </a>
+      <a th:href="@{/projects}" id="projects">Projects | </a>
+      <a th:href="@{/contact}" id="contact">Contact</a>
+    </div>
+  </div>
+
+  <div class="resumeContainer">
+    <span class="res">Resume</span>
+    <div class="line2"></div>
+    <div class="education">
+      <div class="edu1">Education</div>
+      <div class="edu2">
+        <div class="kiit">Kalinga Institute of Industrial Technology<br>Bhubaneshwar, Odisha</div>
+        <div class="course1">Master of Computer Application</div>
+        <div class="Bsc">Ranchi Univeristy<br>Ranchi, Jharkhand</div>
+        <div class="course2">Bachelors of Mathematics (Hons)</div>
+        <div class="twelth">Sri Guru Nanak Public School<br>Ramgarh, Jharkhand</div>
+        <div class="course3">Science</div>
+      </div>
+      <div class="yearTag">
+        <div class="forKiit">2022-2024</div>
+        <div class="forBsc">2017-2020</div>
+        <div class="for12th">2016-2017</div>
+      </div>
+      <div class="line3"></div>   
+    </div>
+    
+    <div class="skillContainer">
+      <div class="skills">Skills</div>
+      <div class="tools">Tools</div>
+      <div class="allskills">
+        <ul>
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>Spring MVC</li>
+          <li>HTML/CSS</li>
+          <li>SQL</li>
+          <li>JavaScript</li>
+          <li>Selenium</li>
+        </ul>
+      </div>
+      <div class="alltools">
+        <ul>
+          <li>Intellij Idea</li>
+          <li>Microsoft VS Code</li>
+          <li>MySQL WorkBench</li>
+          <li>Eclipse</li>
+          <li>Postman</li>
+          <li>GIT</li>
+          <li>Docker</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+
+    <div class="footer">
+       <div class="line1"></div>
+       <div class="emailContainer">
+        <div class="email">Email</div>
+        <div class="emailAdd">sharma.kaustubh.05@gmail.com</div>
+       </div>
+
+       <div class="phoneContainer">
+        <div class="phone">Phone</div>
+        <div class="number">+91-8825106541</div>
+       </div>
+
+       <div class="followContainer">
+        <div class="follow">Follow Me</div>
+        <a href="https://github.com/KaustubhOO7/KaustubhOO7" target="_blank"><img th:src="@{/images/GitHub.png}" class="github"></a>
+        <a href="https://www.linkedin.com/in/kaustubhsharma007/" target="_blank"><img th:src="@{/images/linkedin.png}" class="linkedin"></a>
+       </div>
+    </div>
+    
+</body>
+</html>
